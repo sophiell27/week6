@@ -2392,6 +2392,16 @@ select {
     line-height: 70px;
   }
 
+  .lg\:after\:left-full::after {
+    content: var(--tw-content);
+    left: 100%;
+  }
+
+  .lg\:after\:bottom-1\/2::after {
+    content: var(--tw-content);
+    bottom: 50%;
+  }
+
   .lg\:after\:left-6::after {
     content: var(--tw-content);
     left: 1.5rem;
@@ -2400,6 +2410,38 @@ select {
   .lg\:after\:-bottom-\[19px\]::after {
     content: var(--tw-content);
     bottom: -19px;
+  }
+
+  .lg\:after\:z-20::after {
+    content: var(--tw-content);
+    z-index: 20;
+  }
+
+  .lg\:after\:translate-x-0::after {
+    content: var(--tw-content);
+    --tw-translate-x: 0px;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:after\:translate-y-1\/2::after {
+    content: var(--tw-content);
+    --tw-translate-y: 50%;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:after\:border-l-fog::after {
+    content: var(--tw-content);
+    --tw-border-opacity: 1;
+    border-left-color: rgb(45 45 45 / var(--tw-border-opacity));
+  }
+
+  .lg\:after\:border-t-transparent::after {
+    content: var(--tw-content);
+    border-top-color: transparent;
   }
 
   .lg\:hover\:ring:hover {
