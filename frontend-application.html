@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
-
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -28,7 +28,7 @@
 
     <div class="container">
       <div class="flex justify-between items-center">
-        <a href="index.html" class="md:flex md:items-end md:text-fog-light">
+        <a href="index.html" class="shake-horizontal md:flex md:items-end md:text-fog-light">
           <img src="./assets/images/logo2.svg" alt="logo"
             class="h-6 w-6 object-contain md:w-[42px] md:h-[42px] md:mr-4">
           <p class="hidden md:block"> Coding Home｜</p>
@@ -41,9 +41,9 @@
             </span>
             <ul
               class="dropdownMenu hidden absolute left-0 right-0 top-[79px] bg-fog py-3 z-10 text-center md:static md:flex ">
-              <li><a href="index.html" class="block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">首頁</a></li>
-              <li><a href="courses.html" class="block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">課程介紹</a></li>
-              <li class="md:-mr-6"><a href="#" class="text-4.5 py-3 hover:opacity-40 flex items-center justify-center 
+              <li><a href="index.html" class="shake-rotate block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">首頁</a></li>
+              <li><a href="courses.html" class="shake-rotate block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">課程介紹</a></li>
+              <li class="md:-mr-6"><a href="#" class="shake-rotate text-4.5 py-3 hover:opacity-40 flex items-center justify-center 
                  md:px-6 md:py-auto" data-modal-toggle="loginModal">
                   <span class="material-icons mr-1">
                     account_circle
@@ -131,7 +131,7 @@
                         <div class="absolute left-1/2 -translate-x-1/2 -top-2.5">
                             <button type="button"
                                 class="progressBtn2 text-xs text-fog-light font-az-mono leading-none 
-                                w-5 h-5 bg-black rounded-full outline outline-fog-light flex items-center justify-center mb-1 mx-auto">
+                                w-5 h-5 bg-black rounded-full border-2 border-fog-light flex items-center justify-center mb-1 mx-auto">
                                 2
                             </button>
                             <div class="doneBtn2 hidden">
@@ -147,7 +147,7 @@
                         <div class="absolute -right-8 -top-2.5">
                             <button type="button"
                                 class="progressBtn3 text-xs text-fog-light font-az-mono leading-none 
-                                w-5 h-5 bg-black rounded-full outline outline-fog-light flex items-center justify-center mb-1 mx-auto">
+                                w-5 h-5 bg-black rounded-full border-2 border-fog-light flex items-center justify-center mb-1 mx-auto">
                                 3
                             </button>
                             <div class="doneBtn3 hidden">
@@ -264,7 +264,7 @@
     <section class="paymentStepTwo hidden bg-black pt-6 pb-16 lg:pt-12 lg:pb-20">
         <div class="container">
             <div class="bg-deep-400 p-6 md:w-[416px] mx-auto md:px-8 md:py-12">
-                <h2 class="text-2xl font-bold mb-6 text-center">信用卡付款名</h2>
+                <h2 class="text-2xl font-bold mb-6 text-center">信用卡付款</h2>
                 <h3 class="text-4.5 font-bold mb-4 text-center">請輸入信用卡資訊進行付款</h3>
                 <div class="text-left">
                     <label class="block mb-4">
@@ -327,6 +327,39 @@
         Coding Home © 2022 All Rights Reserved
       </small>
     </footer>
+
+    <!-- aos  animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 150, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
+    <!--  -->
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

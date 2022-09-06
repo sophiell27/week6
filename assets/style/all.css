@@ -1163,6 +1163,9 @@ select {
 .border-0 {
   border-width: 0px;
 }
+.border-2 {
+  border-width: 2px;
+}
 .border-\[3px\] {
   border-width: 3px;
 }
@@ -1512,12 +1515,6 @@ select {
 .shadow-deep-300 {
   --tw-shadow-color: #0000002E;
   --tw-shadow: var(--tw-shadow-colored);
-}
-.outline {
-  outline-style: solid;
-}
-.outline-fog-light {
-  outline-color: #C1C1C1;
 }
 .before\:absolute::before {
   content: var(--tw-content);
@@ -2035,10 +2032,6 @@ select {
 
   .md\:pl-12 {
     padding-left: 3rem;
-  }
-
-  .md\:pt-\[83px\] {
-    padding-top: 83px;
   }
 
   .md\:pb-0 {

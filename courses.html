@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
-
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -28,7 +28,7 @@
 
     <div class="container">
       <div class="flex justify-between items-center">
-        <a href="index.html" class="md:flex md:items-end md:text-fog-light">
+        <a href="index.html" class="shake-horizontal md:flex md:items-end md:text-fog-light">
           <img src="./assets/images/logo2.svg" alt="logo"
             class="h-6 w-6 object-contain md:w-[42px] md:h-[42px] md:mr-4">
           <p class="hidden md:block"> Coding Home｜</p>
@@ -41,9 +41,9 @@
             </span>
             <ul
               class="dropdownMenu hidden absolute left-0 right-0 top-[79px] bg-fog py-3 z-10 text-center md:static md:flex ">
-              <li><a href="index.html" class="block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">首頁</a></li>
-              <li><a href="courses.html" class="block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">課程介紹</a></li>
-              <li class="md:-mr-6"><a href="#" class="text-4.5 py-3 hover:opacity-40 flex items-center justify-center 
+              <li><a href="index.html" class="shake-rotate block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">首頁</a></li>
+              <li><a href="courses.html" class="shake-rotate block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">課程介紹</a></li>
+              <li class="md:-mr-6"><a href="#" class="shake-rotate text-4.5 py-3 hover:opacity-40 flex items-center justify-center 
                  md:px-6 md:py-auto" data-modal-toggle="loginModal">
                   <span class="material-icons mr-1">
                     account_circle
@@ -113,24 +113,24 @@
         <div class="lg:grid lg:grid-cols-12">
             <div class="lg:col-start-2 lg:col-span-10">
                 <div class="allCourses whitespace-nowrap  overflow-x-scroll">
-                    <button class="btn mr-4 btnActive hover:border-neo-green hover:text-neo-green">
+                    <button data-aos="fade-left" class="btn mr-4 btnActive hover:border-neo-green hover:text-neo-green">
                         <h1>
                             所有課程
                         </h1>
                     </button>
-                    <button class="btn mr-4 hover:border-neo-green hover:text-neo-green">
+                    <button data-aos="fade-left" data-aos-delay="100" class="btn mr-4 hover:border-neo-green hover:text-neo-green">
                         行動應用開發
                     </button>
-                    <button class="btn mr-4 hover:border-neo-green hover:text-neo-green">
+                    <button data-aos="fade-right" data-aos-delay="100" class="btn mr-4 hover:border-neo-green hover:text-neo-green">
                         資料庫/資料科學
                     </button>
-                    <button class="btn mr-4 hover:border-neo-green hover:text-neo-green">
+                    <button data-aos="fade-left" data-aos-delay="100" class="btn mr-4 hover:border-neo-green hover:text-neo-green">
                         前端語言
                     </button>
-                    <button class="btn mr-4 hover:border-neo-green hover:text-neo-green">
+                    <button data-aos="fade-right" data-aos-delay="100" class="btn mr-4 hover:border-neo-green hover:text-neo-green">
                         後端語言
                     </button>
-                    <button class="btn hover:border-neo-green hover:text-neo-green">
+                    <button data-aos="fade-left" data-aos-delay="100" class="btn hover:border-neo-green hover:text-neo-green">
                         作業系統與伺服器
                     </button>
                 </div>
@@ -150,14 +150,14 @@
                         class="rounded-3xl py-8 px-6 mb-6 bg-fog shadow-deep-300 shadow-lg lg:p-12 lg:mb-8 lg:w-full lg:flex hover:ring hover:ring-neo-green">
                         <div class="lg:mr-12">
 
-                            <img src="./assets/images/teacher01.jpg" alt="teacher pic"
+                            <img data-aos="fade-right" src="./assets/images/teacher01.jpg" alt="teacher pic"
                                 class="block w-25 h-25 object-cover rounded-full mx-auto mb-2 max-w-none">
-                            <p class="text-base mb-6 text-center lg:mb-0">Belinda</p>
+                            <p data-aos="fade-left" class="text-base mb-6 text-center lg:mb-0">Belinda</p>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-1 md:text-2xl">基礎前端 - HTML</h3>
+                            <h3 data-aos="fade-down" class="text-xl font-bold mb-1 md:text-2xl">基礎前端 - HTML</h3>
                             <mark class="text-base text-neo-green bg-transparent mb-2"> 前端語言</mark>
-                            <p class="text-base mb-12 md:mb-0">
+                            <p data-aos="fade-up" class="text-base mb-12 md:mb-0">
                                 帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。
                             </p>
                         </div>
@@ -166,11 +166,11 @@
                                 50分鐘 <span class="ml-2 font-az-mono text-3.5xl">NT$1600</span> </p>
                             <div class="text-center lg:flex lg:flex-col lg:items-center">
                                 <a href="course-frontend.html">
-                                    <button
+                                    <button data-aos="zoom-out"
                                     class="btn text-4.5 mr-2 hover:border-neo-green hover:text-neo-green lg:mr-0 lg:mb-2 lg:px-12 lg:py-2">課程介紹</button>
                                 </a>
                                 <a href="frontend-application.html">
-                                    <button
+                                    <button  data-aos="zoom-out"
                                         class="btn bg-gradient-to-r from-neo-blue to-neo-green text-4.5 border-0 hover:border-neo-green hover:scale-125 lg:px-12 lg:py-2">
                                         立即預約
                                     </button>
@@ -184,14 +184,14 @@
                     <li
                         class="rounded-3xl py-8 px-6 mb-6 bg-fog shadow-deep-300 shadow-lg lg:p-12 lg:mb-8 lg:w-full lg:flex hover:ring hover:ring-neo-green">
                         <div class="lg:mr-12">
-                            <img src="./assets/images/teacher02.jpg" alt="teacher pic"
+                            <img data-aos="fade-right" src="./assets/images/teacher02.jpg" alt="teacher pic"
                                 class="block w-25 h-25 object-cover rounded-full mx-auto mb-2 max-w-none">
-                            <p class="text-base mb-6 text-center lg:mb-0">Guava</p>
+                            <p data-aos="fade-left" class="text-base mb-6 text-center lg:mb-0">Guava</p>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-1 md:text-2xl ">2022 Python 全攻略｜從入門到實務</h3>
+                            <h3 data-aos="fade-down" class="text-xl font-bold mb-1 md:text-2xl ">2022 Python 全攻略｜從入門到實務</h3>
                             <mark class="text-base text-neo-green bg-transparent mb-2"> 後端語言</mark>
-                            <p class="text-base mb-12 md:mb-0">
+                            <p data-aos="fade-up" class="text-base mb-12 md:mb-0">
                                 Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系...
                             </p>
                         </div>
@@ -199,13 +199,13 @@
                             <p class="text-base mb-4 flex items-baseline justify-center lg:flex-col lg:items-center">
                                 50分鐘 <span class="ml-2 font-az-mono text-3.5xl">NT$2200</span> </p>
                             <div class="text-center lg:flex lg:flex-col lg:items-center">
-                                <button
+                                <button data-aos="zoom-out"
                                     class="btn text-4.5 mr-2 hover:border-neo-green hover:text-neo-green lg:mr-0 lg:mb-2 lg:px-12 lg:py-2">
                                     課程介紹</button>
 
 
                                 <a href="frontend-application.html">
-                                    <button
+                                    <button data-aos="zoom-out"
                                         class="btn bg-gradient-to-r from-neo-blue to-neo-green text-4.5 border-0 hover:border-neo-green hover:scale-125 lg:px-12 lg:py-2">
                                         立即預約
                                     </button>
@@ -219,14 +219,14 @@
                     <li
                         class="rounded-3xl py-8 px-6 mb-6 bg-fog shadow-deep-300 shadow-lg lg:p-12 lg:mb-8 lg:w-full lg:flex hover:ring hover:ring-neo-green">
                         <div class="lg:mr-12">
-                            <img src="./assets/images/teacher03.jpg" alt="teacher pic"
+                            <img data-aos="fade-right" src="./assets/images/teacher03.jpg" alt="teacher pic"
                                 class="block w-25 h-25 object-cover rounded-full mx-auto mb-2 max-w-none">
-                            <p class="text-base mb-6 text-center lg:mb-0">Joe</p>
+                            <p data-aos="fade-left" class="text-base mb-6 text-center lg:mb-0">Joe</p>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-1 md:text-2xl ">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
+                            <h3 data-aos="fade-down" class="text-xl font-bold mb-1 md:text-2xl ">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
                             <mark class="text-base text-neo-green bg-transparent mb-2"> 行動應用開發</mark>
-                            <p class="text-base mb-12 md:mb-0">
+                            <p data-aos="fade-up" class="text-base mb-12 md:mb-0">
                                 Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的...
                             </p>
                         </div>
@@ -234,10 +234,10 @@
                             <p class="text-base mb-4 flex items-baseline justify-center lg:flex-col lg:items-center">
                                 50分鐘 <span class="ml-2 font-az-mono text-3.5xl">NT$1800</span> </p>
                             <div class="text-center lg:flex lg:flex-col lg:items-center">
-                                <button
+                                <button data-aos="zoom-out" 
                                     class="btn text-4.5 mr-2 hover:border-neo-green hover:text-neo-green lg:mr-0 lg:mb-2 lg:px-12 lg:py-2">課程介紹</button>
                                     <a href="frontend-application.html">
-                                        <button
+                                        <button data-aos="zoom-out" 
                                             class="btn bg-gradient-to-r from-neo-blue to-neo-green text-4.5 border-0 hover:border-neo-green hover:scale-125 lg:px-12 lg:py-2">
                                             立即預約
                                         </button>
@@ -249,14 +249,14 @@
                     <li
                         class="rounded-3xl py-8 px-6 mb-6 bg-fog shadow-deep-300 shadow-lg lg:p-12 lg-mb-8 lg:w-full lg:flex hover:ring hover:ring-neo-green">
                         <div class="lg:mr-12">
-                            <img src="./assets/images/teacher04.jpg" alt="teacher pic"
+                            <img data-aos="fade-right" src="./assets/images/teacher04.jpg" alt="teacher pic"
                                 class="block w-25 h-25 object-cover rounded-full mx-auto mb-2 max-w-none">
-                            <p class="text-base mb-6 text-center lg:mb-0">Lina</p>
+                            <p data-aos="fade-left" class="text-base mb-6 text-center lg:mb-0">Lina</p>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-1 md:text-2xl ">Linux 零基礎七天入門｜入門到實務</h3>
+                            <h3 data-aos="fade-down" class="text-xl font-bold mb-1 md:text-2xl ">Linux 零基礎七天入門｜入門到實務</h3>
                             <mark class="text-base text-neo-green bg-transparent mb-2"> 作業系統與伺服器</mark>
-                            <p class="text-base mb-12 md:mb-0">
+                            <p data-aos="fade-up" class="text-base mb-12 md:mb-0">
                                 Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。...
                             </p>
                         </div>
@@ -264,10 +264,10 @@
                             <p class="text-base mb-4 flex items-baseline justify-center lg:flex-col lg:items-center">
                                 50分鐘 <span class="ml-2 font-az-mono text-3.5xl">NT$1100</span> </p>
                             <div class="text-center lg:flex lg:flex-col lg:items-center ">
-                                <button
+                                <button data-aos="zoom-out" 
                                     class="btn text-4.5 mr-2 hover:border-neo-green hover:text-neo-green lg:mr-0 lg:mb-2 lg:px-12 lg:py-2">課程介紹</button>
                                     <a href="frontend-application.html">
-                                        <button
+                                        <button data-aos="zoom-out" 
                                             class="btn bg-gradient-to-r from-neo-blue to-neo-green text-4.5 border-0 hover:border-neo-green hover:scale-125 lg:px-12 lg:py-2">
                                             立即預約
                                         </button>
@@ -288,6 +288,39 @@
         Coding Home © 2022 All Rights Reserved
       </small>
     </footer>
+
+    <!-- aos  animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 150, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
+    <!--  -->
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
