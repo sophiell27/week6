@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
-  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -28,7 +28,7 @@
 
     <div class="container">
       <div class="flex justify-between items-center">
-        <a href="index.html" class="shake-horizontal md:flex md:items-end md:text-fog-light">
+        <a href="index.html" class="md:flex md:items-end md:text-fog-light">
           <img src="./assets/images/logo2.svg" alt="logo"
             class="h-6 w-6 object-contain md:w-[42px] md:h-[42px] md:mr-4">
           <p class="hidden md:block"> Coding Home｜</p>
@@ -41,9 +41,9 @@
             </span>
             <ul
               class="dropdownMenu hidden absolute left-0 right-0 top-[79px] bg-fog py-3 z-10 text-center md:static md:flex ">
-              <li><a href="index.html" class="shake-rotate block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">首頁</a></li>
-              <li><a href="courses.html" class="shake-rotate block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">課程介紹</a></li>
-              <li class="md:-mr-6"><a href="#" class="shake-rotate text-4.5 py-3 hover:opacity-40 flex items-center justify-center 
+              <li><a href="index.html" class="block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">首頁</a></li>
+              <li><a href="courses.html" class="block text-4.5 py-3 hover:opacity-40 md:px-6 md:py-auto">課程介紹</a></li>
+              <li class="md:-mr-6"><a href="#" class="text-4.5 py-3 hover:opacity-40 flex items-center justify-center 
                  md:px-6 md:py-auto" data-modal-toggle="loginModal">
                   <span class="material-icons mr-1">
                     account_circle
@@ -109,11 +109,11 @@
 
   
 <main>
-    <section class="shake-opacity bg-[url('../images/bg_home_mobile.jpg')] bg-cover bg-deep-400 py-21 lg:py-[206px]">
+    <section class="bg-[url('../images/bg_home_mobile.jpg')] bg-cover bg-deep-400 py-21 lg:py-[206px]">
         <div class="container">
             <div class="grid grid-cols-12 ">
                 <div
-                    class="shake-chunk relative border text-center px-7 py-8 col-span-12 md:col-start-3 md:col-span-8 xl:col-start-4 xl:col-span-6 ">
+                    class="relative border text-center px-7 py-8 col-span-12 md:col-start-3 md:col-span-8 xl:col-start-4 xl:col-span-6 ">
                     <h1 class="text-2xl font-bold mb-6 lg:text-5xl lg:leading-[70px]">
                         <span
                             class="bg-gradient-to-b from-neo-blue to-neo-green bg-clip-text text-transparent">全台最豐富的程式家教</span>
@@ -121,7 +121,7 @@
                         <br>
                         在實踐中化理想為現實
                     </h1>
-                    <p class="text-sm ">全台最專業師資｜到府程式家教｜客製化課程</p>
+                    <p class="text-sm">全台最專業師資｜到府程式家教｜客製化課程</p>
 
                     <div class="bg-white w-[10px] h-[10px] absolute top-0 left-0 -translate-x-2/4  -translate-y-2/4">
                     </div>
@@ -143,7 +143,7 @@
     <section class="bg-fog md:py-20">
         <div class="container text-center">
             <div class="grid grid-cols-12 lg:items-center">
-                <div data-aos="fade-right" class="col-span-12 lg:col-span-3 lg:text-left">
+                <div class="col-span-12 lg:col-span-3 lg:text-left">
                     <h2 class="text-2xl font-bold pb-10 md:text-2.5xl lg:p-0 relative after:content-[''] 
                     after:absolute after:bottom-[21px] after:left-1/2 after:-translate-x-1/2 after:w-12.5 
                     after:h-1.3 after:bg-neo-green lg:after:left-6 lg:after:-bottom-[19px]">
@@ -153,7 +153,7 @@
                     </h2>
                 </div>
                 <ul class="col-span-12 md:grid md:grid-cols-12 md:gap-3 lg:col-span-9">
-                    <li data-aos="flip-down"
+                    <li
                         class="bg-fog-dark rounded-xl py-12 mb-6 md:col-span-4 md:h-full md:opacity-60 md:bg-transparent md:grayscale md:hover:bg-fog-dark md:hover:opacity-100 md:hover:grayscale-0 md:hover:ring md:hover:ring-neo-green">
                         <span
                             class="material-icons bg-gradient-to-b from-neo-blue to-neo-green bg-clip-text text-transparent rotate-90 text-12.5 mb-6">
@@ -165,7 +165,7 @@
                             培養運算思維和邏輯素養
                         </p>
                     </li>
-                    <li data-aos="flip-up"
+                    <li
                         class="bg-fog-dark rounded-xl py-12 mb-6 md:col-span-4 md:h-full md:opacity-60 md:bg-transparent md:grayscale md:hover:bg-fog-dark md:hover:opacity-100 md:hover:grayscale-0 md:hover:ring md:hover:ring-neo-green">
                         <span
                             class="material-icons bg-gradient-to-b from-neo-blue to-neo-green bg-clip-text text-transparent text-12.5 mb-6">
@@ -177,7 +177,7 @@
                             讓學習變簡單
                         </p>
                     </li>
-                    <li data-aos="flip-down"
+                    <li
                         class="bg-fog-dark rounded-xl py-12 md:col-span-4 md:h-full md:opacity-60 md:bg-transparent md:grayscale md:hover:bg-fog-dark md:hover:opacity-100 md:hover:grayscale-0 md:hover:ring md:hover:ring-neo-green">
                         <span
                             class="material-icons bg-gradient-to-b from-neo-blue to-neo-green bg-clip-text text-transparent text-12.5 mb-6">
@@ -199,15 +199,14 @@
     <section class="bg-fog-dark py-10 md:py-20">
         <div class="container">
             <div class="grid grid-cols-12">
-                <div data-aos="fade-down" class="col-span-12 ">
+                <div class="col-span-12 ">
                     <h2
                         class="text-5.5 font-bold text-center mb-16.5 md:text-2.5xl md:mb-22.5 relative after:content-[''] 
                     after:absolute after:-bottom-[19px] after:left-1/2 after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green">
                         預期上課流程</h2>
                 </div>
                 <ul class="col-span-12 grid grid-cols-12 gap-y-12.5 md:gap-x-3">
-                    <li data-aos="zoom-in"
-                        class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
+                    <li class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
                         <p
                             class="text-5xl font-az-mono font-bold text-neo-green px-2  bg-fog-dark absolute top-0 left-10 -translate-y-2/4">
                             01</p>
@@ -218,8 +217,7 @@
                         </p>
 
                     </li>
-                    <li data-aos="zoom-in"
-                        class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
+                    <li class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
                         <p
                             class="text-5xl font-az-mono font-bold text-neo-green px-2  bg-fog-dark absolute top-0 left-10 -translate-y-2/4">
                             02</p>
@@ -230,8 +228,7 @@
                         </p>
 
                     </li>
-                    <li data-aos="zoom-in"
-                        class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
+                    <li class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
                         <p
                             class="text-5xl font-az-mono font-bold text-neo-green px-2  bg-fog-dark absolute top-0 left-10 -translate-y-2/4">
                             03</p>
@@ -242,8 +239,7 @@
                         </p>
 
                     </li>
-                    <li data-aos="zoom-in"
-                        class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
+                    <li class="border rounded-xl relative py-12 pl-12 col-span-12 md:col-span-6 h-full lg:col-span-3">
                         <p
                             class="text-5xl font-az-mono font-bold text-neo-green px-2  bg-fog-dark absolute top-0 left-10 -translate-y-2/4">
                             04</p>
@@ -260,7 +256,7 @@
     </section>
 
     <!-- 你想要學習的程式  -->
-    <section data-aos="zoom-out" class="bg-fog py-10 md:py-20">
+    <section class="bg-fog py-10 md:py-20">
         <h2 class="text-2xl font-bold text-center mb-16.5 md:text-2.5xl
             relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
             after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green">
@@ -323,12 +319,12 @@
     <section class="bg-black py-10 md:py-20">
 
         <div class="container">
-            <h2 data-aos="fade-down-right" class="text-2xl font-bold text-center mb-16.5 md:text-2.5xl
+            <h2 class="text-2xl font-bold text-center mb-16.5 md:text-2.5xl
             relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
             after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green">
                 熱門推薦課程</h2>
             <ul class="grid grid-cols-12 md:gap-3 md:mb-12">
-                <li data-aos="fade-down-left"
+                <li
                     class="pt-6 pb-4 mb-6 bg-fog rounded-3xl hover:ring hover:ring-neo-green col-span-12 md:flex md:flex-col md:col-span-6 md:mb-0 xl:col-span-3 ">
                     <div class="px-8 md:px-6">
                         <img src="./assets/images/teacher01.jpg" alt="teacher pic"
@@ -349,7 +345,7 @@
                                 class="ml-2 font-az-mono text-3.5xl">NT$1600</span> </p>
                     </div>
                 </li>
-                <li data-aos="fade-down"
+                <li
                     class="pt-6 pb-4 mb-6 bg-fog rounded-3xl hover:ring hover:ring-neo-green col-span-12  md:flex md:flex-col md:justify-between md:col-span-6 md:mb-0 xl:col-span-3">
                     <div class="px-8 md:px-6">
                         <img src="./assets/images/teacher02.jpg" alt="teacher pic"
@@ -367,7 +363,7 @@
                                 class="ml-2 font-az-mono text-3.5xl">NT$2200</span> </p>
                     </div>
                 </li>
-                <li data-aos="fade-up"
+                <li
                     class="pt-6 pb-4 mb-6 bg-fog rounded-3xl hover:ring hover:ring-neo-green col-span-12 md:flex md:flex-col md:justify-between md:col-span-6 md:mb-0 xl:col-span-3">
                     <div class="px-8 md:px-6">
                         <img src="./assets/images/teacher03.jpg" alt="teacher pic"
@@ -386,7 +382,7 @@
                     </div>
 
                 </li>
-                <li data-aos=""
+                <li
                     class="pt-6 pb-4 mb-6 bg-fog rounded-3xl hover:ring hover:ring-neo-green col-span-12 md:flex md:flex-col md:justify-between md:col-span-6 md:mb-0 xl:col-span-3">
                     <div class="px-8 md:px-6">
                         <img src="./assets/images/teacher04.jpg" alt="teacher pic"
@@ -406,8 +402,7 @@
                 </li>
             </ul>
             <a href="courses.html">
-                <button data-aos="zoom-out-up"
-                    class="shake-rotate py-2 px-8 bg-gradient-to-r from-neo-blue to-neo-green text-4.5 rounded-lg grid mx-auto">
+                <button class="py-2 px-8 bg-gradient-to-r from-neo-blue to-neo-green text-4.5 rounded-lg grid mx-auto">
                     所有課程列表
                 </button>
             </a>
@@ -418,18 +413,18 @@
     <!-- 專案製作  -->
     <section class="max-w-full">
         <ul class="mx-auto text-center md:mx-0 md:grid md:grid-cols-12 ">
-            <li data-aos="flip-left" class="py-10 w-full bg-[url('../images/info01.jpg')] bg-cover bg-no-repeat bg-blend-darken 
+            <li class="py-10 w-full bg-[url('../images/info01.jpg')] bg-cover bg-no-repeat bg-blend-darken 
                 bg-deep-400/80 md:col-span-6 md:relative md:text-left md:pl-12  md:grayscale md:z-30
                  md:hover:grayscale-0 md:hover:bg-blend-normal lg:col-span-3 lg:py-54">
                 <div class="md:absolute md:top-0 md:right-0 md:left-0 md:bottom-0 md:bg-deep-400/60 
                     md:hover:bg-transparent">
                 </div>
-                <span class="material-icons text-neo-green text-3.5xl leading-none mb-4">
+                <span class="material-icons text-neo-green text-3.5xl leading-none mb-4 ">
                     question_answer
                 </span>
-                <div class="md:relative">
+                <div class="md:relative md:pt-[83px] md:z-40">
                     <h2 class="text-2xl font-bold text-center mb-12
-                    md:z-40 md:text-left
+                    md:absolute md:top-0 md:left-0
                     relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
                     after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green 
                     md:after:left-0 md:after:translate-x-0">
@@ -441,7 +436,7 @@
                     還有機會一起完成專案
                 </h3>
             </li>
-            <li data-aos="flip-up" data-aos-delay="50"
+            <li
                 class="py-10 w-full bg-[url('../images/info02.jpg')] bg-cover bg-no-repeat bg-blend-darken bg-deep-400/80 md:col-span-6 md:relative md:text-left md:pl-12  md:grayscale md:z-30 md:hover:grayscale-0 md:hover:bg-blend-normal lg:col-span-3 lg:py-54">
                 <div
                     class="md:absolute md:top-0 md:right-0 md:left-0 md:bottom-0 md:bg-deep-400/60 md:hover:bg-transparent">
@@ -449,9 +444,9 @@
                 <span class="material-icons text-neo-green text-3.5xl leading-none mb-4 ">
                     tips_and_updates
                 </span>
-                <div class="md:relative ">
+                <div class="md:relative md:pt-[83px] md:z-40">
                     <h2 class="text-2xl font-bold text-center mb-12
-                    md:z-40 md:text-left
+                    md:absolute md:top-0 md:left-0
                     relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
                     after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green 
                     md:after:left-0 md:after:translate-x-0">
@@ -464,7 +459,7 @@
                 </h3>
                 </div>
             </li>
-            <li data-aos="flip-right" data-aos-delay="50"
+            <li
                 class="py-10 w-full bg-[url('../images/info03.jpg')] bg-cover bg-no-repeat bg-blend-darken bg-deep-400/80 md:col-span-6 md:relative md:text-left md:pl-12  md:grayscale md:z-30 md:hover:grayscale-0 md:hover:bg-blend-normal lg:col-span-3 lg:py-54">
                 <div
                     class="md:absolute md:top-0 md:right-0 md:left-0 md:bottom-0 md:bg-deep-400/60 md:hover:bg-transparent">
@@ -472,9 +467,9 @@
                 <span class="material-icons text-neo-green text-3.5xl leading-none mb-4">
                     thumb_up_alt
                 </span>
-                <div class="md:relative">
+                <div class="md:relative md:pt-[83px] md:z-40">
                     <h2 class="text-2xl font-bold text-center mb-12
-                    md:z-40 md:text-left
+                    md:absolute md:top-0 md:left-0
                     relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
                     after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green 
                     md:after:left-0 md:after:translate-x-0">
@@ -487,7 +482,7 @@
                 </h3>
                 </div>
             </li>
-            <li data-aos="flip-left" data-aos-delay="50"
+            <li
                 class="py-10 w-full bg-[url('../images/info04.jpg')] bg-cover bg-no-repeat bg-blend-darken bg-deep-400/80 md:col-span-6 md:relative md:text-left md:pl-12  md:grayscale md:z-30 md:hover:grayscale-0 md:hover:bg-blend-normal lg:col-span-3 lg:py-54">
                 <div
                     class="md:absolute md:top-0 md:right-0 md:left-0 md:bottom-0 md:bg-deep-400/60 md:hover:bg-transparent">
@@ -495,9 +490,9 @@
                 <span class="material-icons text-neo-green text-3.5xl leading-none mb-4">
                     supervisor_account
                 </span>
-                <div class="md:relative">
+                <div class="md:relative md:pt-[83px] md:z-40">
                     <h2 class="text-2xl font-bold text-center mb-12
-                    md:z-40 md:text-left
+                    md:absolute md:top-0 md:left-0
                     relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
                     after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green 
                     md:after:left-0 md:after:translate-x-0">
@@ -517,15 +512,15 @@
     <!-- 文章分享  -->
     <section class="bg-deep-400 py-10 md:py-20">
         <div class="container">
-            <h2 data-aos="fade-down" class="text-2xl font-bold text-center mb-[56px] md:text-2.5xl md:mb-16
+            <h2 class="text-2xl font-bold text-center mb-[56px] md:text-2.5xl md:mb-16
             relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
             after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green">
                 文章分享</h2>
             <ul class="md:grid md:grid-cols-12 md:gap-3">
-                <li class="shake-slow  w-100 h-full mb-6 md:col-span-4 md:p-8 md:mb-0 md:relative group">
-                    <img data-aos="fade-up-left"  src="./assets/images/article01.jpg" alt="article pic" class="mb-4">
-                    <h3 data-aos="fade-up-right" class="text-4.5 font-bold mb-4">2022 前端開發者學習地圖</h3>
-                    <p data-aos="fade-up" class="text-base mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
+                <li class="w-100 h-full mb-6 md:col-span-4 md:p-8 md:mb-0 md:relative group">
+                    <img src="./assets/images/article01.jpg" alt="article pic" class="mb-4">
+                    <h3 class="text-4.5 font-bold mb-4">2022 前端開發者學習地圖</h3>
+                    <p class="text-base mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
                     <a href="#" class="text-4.5 leading-[21px] text-neo-green text-right block">MORE</a>
                     <div
                         class="hidden w-8 h-8 rounded-tl-xl md:absolute md:top-0 md:left-0 md:-translate-2/4 md:border-t-2 md:border-l-2 border-transparent md:block group-hover:border-neo-green">
@@ -540,10 +535,10 @@
                         class="hidden w-8 h-8 rounded-bl-xl md:absolute md:bottom-0 md:left-0 md:-translate-2/4 md:border-b-2 md:border-l-2 border-transparent md:block group-hover:border-neo-green">
                     </div>
                 </li>
-                <li class="shake-slow w-100 h-full mb-6 md:col-span-4 md:p-8 md:mb-0 md:relative group">
-                    <img data-aos="fade-down-right"  src="./assets/images/article02.jpg" alt="article pic" class="mb-4">
-                    <h3 data-aos="fade-down-left" class="text-4.5 font-bold mb-4">2022 軟體工程師有哪些類別</h3>
-                    <p data-aos="fade-down" class="text-base mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
+                <li class="w-100 h-full mb-6 md:col-span-4 md:p-8 md:mb-0 md:relative group">
+                    <img src="./assets/images/article02.jpg" alt="article pic" class="mb-4">
+                    <h3 class="text-4.5 font-bold mb-4">2022 軟體工程師有哪些類別</h3>
+                    <p class="text-base mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
                     <a href="#" class="text-4.5 leading-[21px] text-neo-green text-right block">MORE</a>
                     <div
                         class="hidden w-8 h-8 rounded-tl-xl md:absolute md:top-0 md:left-0 md:-translate-2/4 md:border-t-2 md:border-l-2 border-transparent md:block group-hover:border-neo-green">
@@ -558,12 +553,12 @@
                         class="hidden w-8 h-8 rounded-bl-xl md:absolute md:bottom-0 md:left-0 md:-translate-2/4 md:border-b-2 md:border-l-2 border-transparent md:block group-hover:border-neo-green">
                     </div>
                 </li>
-                <li class="shake-slow w-100 h-full md:col-span-4 md:p-8 md:mb-0 md:relative group">
-                    <img data-aos="fade-left" src="./assets/images/article03.jpg" alt="article pic" class="mb-4">
-                    <h3  data-aos="fade-up-left" class="text-4.5 font-bold mb-4">免費 25 小時前端教學資源</h3>
-                    <p  data-aos="fade-up"  class="text-base mb-4">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
+                <li class="w-100 h-full md:col-span-4 md:p-8 md:mb-0 md:relative group">
+                    <img src="./assets/images/article03.jpg" alt="article pic" class="mb-4">
+                    <h3 class="text-4.5 font-bold mb-4">免費 25 小時前端教學資源</h3>
+                    <p class="text-base mb-4">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
                     <a href="#" class="text-4.5 leading-[21px] text-neo-green text-right block">MORE</a>
-                    <div 
+                    <div
                         class="hidden w-8 h-8 rounded-tl-xl md:absolute md:top-0 md:left-0 md:-translate-2/4 md:border-t-2 md:border-l-2 border-transparent md:block group-hover:border-neo-green">
                     </div>
                     <div
@@ -585,11 +580,11 @@
     <!-- 專屬你的學習課程  -->
     <section class="bg-black py-10 md:py-20">
         <div class="container">
-            <h2 data-aos="flip-up" class="text-2xl font-bold text-center mb-10 md:text-2.5xl md:mb-16
+            <h2 class="text-2xl font-bold text-center mb-10 md:text-2.5xl md:mb-16
             relative after:content-[''] after:absolute after:-bottom-[19px] after:left-1/2 
             after:-translate-x-1/2 after:w-12.5 after:h-1.3 after:bg-neo-green">
                 專屬你的學習課程
-                <br >
+                <br>
                 超過 3000 位學員得到了
                 <br>
                 程式超能力
@@ -597,7 +592,7 @@
             <div class="md:flex md:justify-center md:items-end">
                 <!-- SwiperTwo -->
 
-                <div data-aos="fade-left" class="md:w-5/12 ">
+                <div class="md:w-5/12 ">
                     <div class="swiper swiperTwo ">
                         <div class="swiper-wrapper mb-2.5 md:mb-0">
                             <div class="swiper-slide">
@@ -664,7 +659,7 @@
                 </div>
 
                 <!-- SwiperThree -->
-                <div data-aos="fade-right" class="md:w-4/12 md:-ml-8 md:-mb-8">
+                <div class="md:w-4/12 md:-ml-8 md:-mb-8">
                     <div class="swiper swiperThree ">
                         <div class="swiper-wrapper mb-10 mt-7.5 md:mb-8">
                             <div class="swiper-slide">
@@ -748,16 +743,16 @@
             <div
                 class="bg-fog-dark py-10 px-6 text-center rounded-3xl lg:p-12 xl:w-9/12 lg:flex lg:mx-auto lg:items-center lg:justify-between ">
                 <div class="lg:flex lg:items-center">
-                    <span data-aos="fade-right" class="shake-hard material-icons text-8.5xl text-white opacity-60 mb-6 lg:mr-12">
+                    <span class="material-icons text-8.5xl text-white opacity-60 mb-6 lg:mr-12">
                         menu_book
                     </span>
                     <div>
-                        <h2 data-aos="fade-down" class="text-2xl font-bold mb-6 lg:text-2.5xl">加入我們成為導師</h2>
-                        <p data-aos="fade-up" class="text-base mb-6 lg:text-4.5 lg:mb-0">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+                        <h2 class="text-2xl font-bold mb-6 lg:text-2.5xl">加入我們成為導師</h2>
+                        <p class="text-base mb-6 lg:text-4.5 lg:mb-0">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
                     </div>
                 </div>
-                <button data-aos="fade-left" 
-                    class="shake-rotate border py-2 px-8 bg-transparent rounded-lg lg:text-4.5 lg:hover:ring lg:hover:ring-neo-green">立即預約</button>
+                <button
+                    class="border py-2 px-8 bg-transparent rounded-lg lg:text-4.5 lg:hover:ring lg:hover:ring-neo-green">立即預約</button>
             </div>
         </div>
 
@@ -772,39 +767,6 @@
         Coding Home © 2022 All Rights Reserved
       </small>
     </footer>
-
-    <!-- aos  animation-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-// You can also pass an optional settings object
-// below listed default settings
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 150, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 800, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: true, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-    </script>
-    <!--  -->
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
